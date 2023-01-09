@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Circe-Regular.woff') format('woff'),
+        url('../fonts/Circe-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Circe-Bold.woff') format('woff'),
+        url('../fonts/Circe-Bold.ttf') format('ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +25,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 body {
     margin: 0;
+    overflow: auto;
 }
 
 .container {
@@ -19,13 +36,14 @@ body {
 .first-screen {
     background-image: url('../images/header/first_screen.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
     display: flex;
+    padding-right: 100px;
+    height: 1000px;
+    justify-content: space-between;
 }
 
 .sidebar {
-
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 30px 19px;
@@ -45,4 +63,142 @@ body {
         width: 33px;
     }
 
+    &__block-down {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 40px;
+    }
+
+    &__contacts {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-left: 20px;
+    }
+
+    &__item {
+        margin-bottom: 40px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.menu-screen {
+
+    &__block {
+        margin-top: 30px;
+    }
+
+    &__nav {
+        width: 500px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__item {
+        padding: 10px 20px;
+        transition: all 1s;
+
+        &:hover {
+            background-color: #B59571;
+            font-weight: 700;
+          }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+
+        font: {
+            family: "Circe";
+            weight: 400;
+            size: 16px;
+        }
+
+        line-height: 22.4px;
+    }
+
+}
+
+
+.screen-title {
+    position: relative;
+    width: 856px;
+    margin-left: 302px;
+
+    &__item {
+        position: absolute;
+        font: {
+            family: "Circe";
+            size: 54px;
+            weight: 700;
+        }
+
+        line-height: 75.6px;
+        color: #ffffff;
+        bottom: 150px;
+    }
+}
+
+// Main
+
+main {
+    .container {
+        padding: 150px 312px 100px;
+    }
+}
+
+.about {
+    &__title {
+        text-transform: uppercase;
+        color: #333;
+        line-height: 28px;
+        font: {
+            family: "Circe";
+            weight: 700;
+            size: 20px;
+        }
+
+        &:after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: #B59571;
+            margin-left: 30px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        
+    }
+
+    &__info {
+
+    }
+
+    &__subtitle {
+        font: {
+            family: "circe";
+            weight: 700;
+            size: 64px;
+        }
+
+        line-height: 76.8px;
+        color: #333;
+    }
+
+    &__des {
+        font: {
+            family: 'Circe';
+            weight: 400;
+            size: 18px;
+        }
+        line-height: 25.3px;
+        color: #333; 
+    }
 }
