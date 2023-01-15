@@ -301,4 +301,58 @@ main .container {
   background-color: #B59571;
 }
 
+.contacts__title {
+  text-transform: uppercase;
+  color: #333;
+  line-height: 28px;
+  margin-top: 150px;
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 20px;
+}
+.contacts__title:after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #B59571;
+  margin-left: 30px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.contacts__time {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts__time-minutes {
+  color: #B59571;
+  font-family: "Circe";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.contacts__time-minutes p {
+  font-size: 32px;
+  line-height: 120%;
+}
+.contacts__time-loc {
+  color: #333;
+  font-family: "Circe";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.contacts__address-location__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contacts__address-time__work {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /*# sourceMappingURL=style.css.map */
