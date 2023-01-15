@@ -150,15 +150,18 @@ body {
 
 main {
     .container {
-        padding: 150px 312px 100px;
+        padding: 0px 312px;
     }
 }
+
+// About section
 
 .about {
     &__title {
         text-transform: uppercase;
         color: #333;
         line-height: 28px;
+        margin-top: 150px;
         font: {
             family: "Circe";
             weight: 700;
@@ -178,10 +181,14 @@ main {
     }
 
     &__info {
-
+        margin-top: 80px;
+        padding-left: 220px;
+        display: flex;
     }
 
     &__subtitle {
+        width: 190px;
+        margin-right: 134px;
         font: {
             family: "circe";
             weight: 700;
@@ -193,6 +200,7 @@ main {
     }
 
     &__des {
+        width: 526px;
         font: {
             family: 'Circe';
             weight: 400;
@@ -202,3 +210,187 @@ main {
         color: #333; 
     }
 }
+
+// Menu section
+
+.menu {
+    &__title {
+        text-transform: uppercase;
+        color: #333;
+        line-height: 28px;
+        margin-top: 150px;
+        font: {
+            family: "Circe";
+            weight: 700;
+            size: 20px;
+        }
+
+        &:after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: #B59571;
+            margin-left: 30px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        
+    }
+
+    &__info {
+        margin-top: 80px;
+        padding-left: 220px;
+        display: flex;
+    }
+
+    &__subtitle {
+        width: 190px;
+        margin-right: 134px;
+        font: {
+            family: "circe";
+            weight: 700;
+            size: 64px;
+        }
+
+        line-height: 76.8px;
+        color: #333;
+    }
+
+    &__des {
+        width: 526px;
+        margin-bottom: 80px;
+        font: {
+            family: 'Circe';
+            weight: 400;
+            size: 18px;
+        }
+        line-height: 25.3px;
+        color: #333; 
+    }
+
+    &__categories {
+        padding-left: 210px;
+        padding-right: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__categories-item {
+        width: 416px;
+        height: 240px;
+        position: relative;
+        padding: 40px 40px 0;
+        border: 1px solid rgba(51, 51, 51, 0.2);
+    }
+
+    &__categories-img {
+        position: absolute;
+        right: 40px;
+    }
+
+    &__categories-title {
+        position: absolute;
+        text-decoration: none;
+        top: 270px;
+        right: 65px;
+        text-transform: uppercase;
+        color: #333;
+        line-height: 28px;
+        margin-top: 24px;
+        font: {
+            family: "Circe";
+            weight: 700;
+            size: 20px;
+        }
+
+        &:after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: #B59571;
+            margin-left: 30px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        
+    }
+}
+
+// Delivery section
+
+.delivery {
+    &__title {
+        text-transform: uppercase;
+        color: #333;
+        line-height: 28px;
+        margin-top: 150px;
+        font: {
+            family: "Circe";
+            weight: 700;
+            size: 20px;
+        }
+
+        &:after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: #B59571;
+            margin-left: 30px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        
+    }
+
+    &__info {
+        margin-top: 80px;
+        padding-left: 220px;
+        display: flex;
+    }
+
+    &__subtitle {
+        width: 190px;
+        margin-right: 134px;
+        font: {
+            family: "circe";
+            weight: 700;
+            size: 64px;
+        }
+
+        line-height: 76.8px;
+        color: #333;
+    }
+
+    &__text {
+        width: 526px;
+        font: {
+            family: 'Circe';
+            weight: 400;
+            size: 18px;
+        }
+        line-height: 25.3px;
+        color: #333; 
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        border: 1px solid #E5E5E5;
+        padding: 15px 30px;
+        color: #333;
+        background-color: #ffffff;
+        margin-right: 30px;
+        font: {
+            family: "Circe";
+            size: 20px;
+            weight: 700;
+        }
+        cursor: pointer;
+        transition: all 1s;
+
+        &:hover {
+            color: #fff;
+            background-color: #B59571;
+        }
+    }
+}
+
