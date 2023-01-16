@@ -301,11 +301,15 @@ main .container {
   background-color: #B59571;
 }
 
+.contacts {
+  margin-bottom: 100px;
+}
 .contacts__title {
   text-transform: uppercase;
   color: #333;
   line-height: 28px;
   margin-top: 150px;
+  margin-bottom: 80px;
   font-family: "Circe";
   font-weight: 700;
   font-size: 20px;
@@ -319,12 +323,17 @@ main .container {
   display: inline-block;
   margin-bottom: 6px;
 }
+.contacts__location {
+  display: flex;
+  justify-content: space-between;
+}
 .contacts__time {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 210px 150px;
+  margin-top: 70px;
 }
 .contacts__time-minutes {
   color: #B59571;
@@ -344,15 +353,92 @@ main .container {
   font-weight: 400;
   line-height: 140%;
 }
+.contacts__map {
+  width: 746px;
+  height: 450px;
+  background-image: url("../images/main/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contacts__address {
+  width: 416px;
+  background-color: #5B5B5B;
+  padding: 40px;
+  position: relative;
+  top: 55px;
+  right: 110px;
+}
 .contacts__address-location__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+.contacts__address-location__list li {
+  margin-bottom: 20px;
+}
+.contacts__address-location__list li a {
+  text-decoration: none;
+  font-family: "Circe";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #fff;
+}
+.contacts__address-location__list li img {
+  margin-right: 20px;
+}
 .contacts__address-time__work {
   padding: 0;
   margin: 0;
   list-style: none;
+  color: #fff;
+  font-family: "Circe";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.contacts__address-time__work li {
+  margin-bottom: 15px;
+}
+.contacts__address-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__address-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-family: "Circe";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 1s;
+}
+.contacts__address-btn:hover {
+  background-color: #B59571;
+  border: 1px solid #B59571;
+}
+
+footer {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #333333;
+  padding: 35px 320px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Circe";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
